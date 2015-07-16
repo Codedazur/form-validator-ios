@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'CDAFormValidation_Example', :exclusive => true do
+  pod "CDAFormValidation", :path => "../"
+end
+
+target 'CDAFormValidation_Tests', :exclusive => true do
+  pod "CDAFormValidation", :path => "../"
+
+  pod 'Kiwi'
+end
