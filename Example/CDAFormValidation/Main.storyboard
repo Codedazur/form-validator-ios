@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,8 +17,70 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZEq-kK-BgR">
+                                <rect key="frame" x="16" y="47" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jdu-Gb-Py2">
+                                <rect key="frame" x="16" y="101" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5qN-3Z-OmM">
+                                <rect key="frame" x="16" y="153" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fz2-rR-efO">
+                                <rect key="frame" x="16" y="207" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ez4-uH-4rG">
+                                <rect key="frame" x="530" y="262" width="54" height="30"/>
+                                <state key="normal" title="Validate">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onClickValidate:" destination="whP-gf-Uak" eventType="touchUpInside" id="hlF-G4-NJA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7GB-Tt-WW6">
+                                <rect key="frame" x="16" y="295" width="31" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.91764705879999997" green="0.20784313730000001" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ez4-uH-4rG" firstAttribute="top" secondItem="Fz2-rR-efO" secondAttribute="bottom" constant="25" id="6qa-pA-WU2"/>
+                            <constraint firstItem="Jdu-Gb-Py2" firstAttribute="leading" secondItem="ZEq-kK-BgR" secondAttribute="leading" id="8I6-MK-DaH"/>
+                            <constraint firstItem="Fz2-rR-efO" firstAttribute="top" secondItem="5qN-3Z-OmM" secondAttribute="bottom" constant="24" id="F65-Ja-trp"/>
+                            <constraint firstItem="5qN-3Z-OmM" firstAttribute="trailing" secondItem="Jdu-Gb-Py2" secondAttribute="trailing" id="HAR-xw-Nlq"/>
+                            <constraint firstItem="ZEq-kK-BgR" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="LYi-3i-3RY"/>
+                            <constraint firstItem="5qN-3Z-OmM" firstAttribute="leading" secondItem="Fz2-rR-efO" secondAttribute="leading" id="QFw-ST-E4z"/>
+                            <constraint firstItem="5qN-3Z-OmM" firstAttribute="top" secondItem="Jdu-Gb-Py2" secondAttribute="bottom" constant="22" id="QhJ-Do-TQO"/>
+                            <constraint firstItem="7GB-Tt-WW6" firstAttribute="top" secondItem="Fz2-rR-efO" secondAttribute="bottom" constant="58" id="WR8-fJ-R9a"/>
+                            <constraint firstItem="Jdu-Gb-Py2" firstAttribute="top" secondItem="ZEq-kK-BgR" secondAttribute="bottom" constant="24" id="cqU-Hm-Okm"/>
+                            <constraint firstItem="5qN-3Z-OmM" firstAttribute="leading" secondItem="Jdu-Gb-Py2" secondAttribute="leading" id="lpe-ls-0IM"/>
+                            <constraint firstItem="Ez4-uH-4rG" firstAttribute="trailing" secondItem="Fz2-rR-efO" secondAttribute="trailing" id="onm-jz-cIB"/>
+                            <constraint firstItem="7GB-Tt-WW6" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="qSL-kV-Ur9"/>
+                            <constraint firstItem="5qN-3Z-OmM" firstAttribute="trailing" secondItem="Fz2-rR-efO" secondAttribute="trailing" id="rmg-ip-zc0"/>
+                            <constraint firstItem="ZEq-kK-BgR" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="27" id="tCY-ta-s9u"/>
+                            <constraint firstItem="Jdu-Gb-Py2" firstAttribute="trailing" secondItem="ZEq-kK-BgR" secondAttribute="trailing" id="ufE-D1-lHK"/>
+                            <constraint firstItem="ZEq-kK-BgR" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="ym2-jf-8w4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbError" destination="7GB-Tt-WW6" id="4Zk-Zy-Ipf"/>
+                        <outlet property="tf1" destination="ZEq-kK-BgR" id="XCA-km-iRr"/>
+                        <outlet property="tf2" destination="Jdu-Gb-Py2" id="0ey-eu-fZM"/>
+                        <outlet property="tf3" destination="5qN-3Z-OmM" id="flc-iz-yBy"/>
+                        <outlet property="tf4" destination="Fz2-rR-efO" id="gMu-Jf-MGb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

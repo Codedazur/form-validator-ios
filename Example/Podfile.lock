@@ -1,0 +1,17 @@
+PODS:
+  - CDAFormValidation (0.1.0)
+  - Kiwi (2.3.1)
+
+DEPENDENCIES:
+  - CDAFormValidation (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  CDAFormValidation:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CDAFormValidation: 8b3451acbacc52ad49e82456de32f6ecdb9fbafa
+  Kiwi: f038a6c61f7a9e4d7766bff5717aa3b3fdb75f55
+
+COCOAPODS: 0.37.2

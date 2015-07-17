@@ -1,0 +1,6 @@
+framework module CDAFormValidation {
+  umbrella header "Pods-CDAFormValidation_Tests-CDAFormValidation-umbrella.h"
+
+  export *
+  module * { export * }
+}
