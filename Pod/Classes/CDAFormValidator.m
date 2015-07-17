@@ -49,7 +49,7 @@
     NSInteger __block counter = 0;
     NSInteger __block total = self.formValidatorFields.count;
     
-    for (int i=0,n=self.formValidatorRules.count; i<n; i++) {
+    for (NSUInteger i=0,n=self.formValidatorRules.count; i<n; i++) {
         CDAFormValidatorField *formField = [self.formValidatorFields objectAtIndex:i];
         NSObject<CDAFormValidationRule> *validationRule = [self.formValidatorRules objectAtIndex:i];
         [validationRule validateWithFormField:formField AndCompletion:^(BOOL valid, CDAFormValidatorField *field) {

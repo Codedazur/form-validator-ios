@@ -10,18 +10,15 @@
 Pod::Spec.new do |s|
   s.name             = "CDAFormValidation"
   s.version          = "0.1.0"
-  s.summary          = "A short description of CDAFormValidation."
+  s.summary          = "Simple Formvalidation Library"
   s.description      = <<-DESC
-                       An optional longer description of CDAFormValidation
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Block based library to add validations to the forms in your app.
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/CDAFormValidation"
+  s.homepage         = "https://github.com/Codedazur/form-validator-ios"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "tamarabernad" => "tamara@codedazur.es" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/CDAFormValidation.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Codedazur/form-validator-ios.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
