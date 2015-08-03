@@ -43,11 +43,9 @@
 		2AE9B71D4EFEBA61B8395165 /* KWBeEmptyMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D57DBB3F2BFE735B514840 /* KWBeEmptyMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2B36326CD4600A43E887F7A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67EBC5F0ABCFD595AD20F134 /* Foundation.framework */; };
 		2B7C120A3D5CFB0E1715C64F /* KWHaveMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B366208247AE021E60DD30C /* KWHaveMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C2C92DF291F33475AB1CBD3 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1612A9A0A9A02A78E5489 /* ReplaceMe.m */; };
 		2CBF5CE71090F23D5D2FA747 /* KWMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = D217F5EA71AA25E1278358CA /* KWMatcher.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		2CD6199D287F2A023C0E8397 /* KWReceiveMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DB8E03076860B651F7FC73EF /* KWReceiveMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2E29B5BCB737AED3A7F0F8D2 /* NSProxy+KiwiVerifierAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EEE60D828F834334A4E306 /* NSProxy+KiwiVerifierAdditions.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2EFEF71AAF2DF9ACC7FAC58C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1612A9A0A9A02A78E5489 /* ReplaceMe.m */; };
 		300F278CF4EE727A7A17B320 /* KWCountType.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E68D9A95D7D99C890BFD79 /* KWCountType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		306F636B81E9978DE3961625 /* KWAfterAllNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F7CC6BB58E6F5EB92A346A18 /* KWAfterAllNode.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		30D83445B0CE6F108F5151A1 /* KWAfterEachNode.h in Headers */ = {isa = PBXBuildFile; fileRef = E44D397A2AF44A3715BD1CC0 /* KWAfterEachNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -346,7 +344,6 @@
 		4DFFAEA3D75CC92AA2EFBDE1 /* KWMatchers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWMatchers.m; path = Classes/Core/KWMatchers.m; sourceTree = "<group>"; };
 		4F390B465781F8FDED6091FA /* KWChangeMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KWChangeMatcher.h; path = Classes/Matchers/KWChangeMatcher.h; sourceTree = "<group>"; };
 		4F98125C84D8795CE82FC32C /* KWBeTrueMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWBeTrueMatcher.m; path = Classes/Matchers/KWBeTrueMatcher.m; sourceTree = "<group>"; };
-		4FE1612A9A0A9A02A78E5489 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
 		512286EA294FEC28DD2BEC87 /* CDAFormValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = CDAFormValidator.m; sourceTree = "<group>"; };
 		524E7B82D94726B0AA79B18C /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5419076473FB287868AAB000 /* KWIntercept.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KWIntercept.m; path = Classes/Stubbing/KWIntercept.m; sourceTree = "<group>"; };
@@ -916,7 +913,6 @@
 				512286EA294FEC28DD2BEC87 /* CDAFormValidator.m */,
 				F82636B94F9D0EC58FE23A54 /* CDAFormValidatorField.h */,
 				CDD8D2507EB266188C757764 /* CDAFormValidatorField.m */,
-				4FE1612A9A0A9A02A78E5489 /* ReplaceMe.m */,
 				F3449B2D43DE0FEF06F721EB /* validators */,
 			);
 			path = Classes;
@@ -1329,7 +1325,6 @@
 				6148F7CE59691962A28C56DF /* CDAFormValidatorField.m in Sources */,
 				A76EA814E0CE67A4BBD3489B /* CDAFormValidatorNotNil.m in Sources */,
 				514A57314604524BABD13F0C /* Pods-CDAFormValidation_Example-CDAFormValidation-dummy.m in Sources */,
-				2C2C92DF291F33475AB1CBD3 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1458,7 +1453,6 @@
 				B5FA7E8BF5CA7BACF79F4A12 /* CDAFormValidatorField.m in Sources */,
 				C02B6F172D848136740B5128 /* CDAFormValidatorNotNil.m in Sources */,
 				4E98149FD8ABEA497A4E485D /* Pods-CDAFormValidation_Tests-CDAFormValidation-dummy.m in Sources */,
-				2EFEF71AAF2DF9ACC7FAC58C /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
