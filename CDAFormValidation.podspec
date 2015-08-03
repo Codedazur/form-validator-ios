@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "CDAFormValidation"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Simple Formvalidation Library"
   s.description      = <<-DESC
                        Block based library to add validations to the forms in your app.
